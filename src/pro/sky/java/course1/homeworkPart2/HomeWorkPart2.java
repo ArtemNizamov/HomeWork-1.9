@@ -1,12 +1,19 @@
-public class Main {
+package pro.sky.java.course1.homeworkPart2;
 
+public class HomeWorkPart2 {
     public static void main(String[] args) {
+
         Author bradberry = new Author("Рей", "Бредберри");
+
         Author pushkin = new Author("Александр", "Пушкин");
+
+        Author bradferry = new Author("Рей", "Бредферри");
 
         Book fahrenheit = new Book("Фаренгейт", bradberry, 1976);
 
         Book forest = new Book("Лес", pushkin, 1946);
+
+        Book gahrenheit = new Book("Фаренгейт", bradferry, 1924);
 
         System.out.println();
 
@@ -33,6 +40,24 @@ public class Main {
                 fahrenheit.setYearOfCreate(1965);
                 System.out.println("Актуальный год публикации книги " + fahrenheit.getBookName() + " = " + fahrenheit.getYearOfCreate());
 
+                System.out.println();
+
+                System.out.println(bradberry);
+
+                System.out.println();
+
+                System.out.println(fahrenheit);
+
+
+                System.out.println(bradberry.equals(bradberry));
+                System.out.println(bradberry.equals(bradferry));
+                System.out.println(bradberry.equals(pushkin));
+
+                System.out.println(fahrenheit.equals(fahrenheit));
+                System.out.println(fahrenheit.equals(gahrenheit));
+                System.out.println(fahrenheit.equals(forest));
+
+
 
             }
         }
@@ -40,3 +65,4 @@ public class Main {
     }
 
 }
+
