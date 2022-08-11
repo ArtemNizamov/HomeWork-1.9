@@ -48,16 +48,26 @@ public class HomeWorkPart2 {
 
                 System.out.println(fahrenheit);
 
+                // Проверка на равенство между авторами
 
                 System.out.println(bradberry.equals(bradberry));
                 System.out.println(bradberry.equals(bradferry));
                 System.out.println(bradberry.equals(pushkin));
 
+                System.out.println();
+
+                // Проверка на равенство между книгами
+
                 System.out.println(fahrenheit.equals(fahrenheit));
                 System.out.println(fahrenheit.equals(gahrenheit));
                 System.out.println(fahrenheit.equals(forest));
 
+                System.out.println();
 
+                // Выполнение Хэш кодов
+
+                System.out.println(fahrenheit.hashCode() == gahrenheit.hashCode());
+                System.out.println(fahrenheit.equals(gahrenheit));
 
             }
         }
